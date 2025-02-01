@@ -18,6 +18,6 @@
 - name: PLAY-03
   hosts: web
   tasks:
-  - name: PLAY-03
+  - name: PLAY-03 TASK-01
     ansible.builtin.debug:
       msg: "This is from PLAY-03 and TASK-01"

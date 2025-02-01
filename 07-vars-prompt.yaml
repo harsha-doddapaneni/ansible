@@ -1,7 +1,12 @@
 - name: variables from files
   hosts: web
-  vars_files:
-  - vars.yaml
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter course name
+  - name: TRAINER
+    prompt: please enter the trainer namee
+  - name: DURATION
+    prompt: please enter duration
   tasks:
   - name: print the course information
     ansible.builtin.debug:

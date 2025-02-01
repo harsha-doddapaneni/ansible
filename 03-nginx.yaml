@@ -5,10 +5,10 @@
   - name: install nginx
     ansible.builtin.package: #heterongenous module that can work for all distros
       name: nginx
-      state: stopped
+      state: absent
   
   - name: run nginx
     ansible.builtin.service:
       name: nginx
-      state: stopped
+      state: absent
       enabled: yes

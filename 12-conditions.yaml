@@ -11,9 +11,9 @@
   - name: print this if less than 10
     ansible.builtin.debug:
       msg: "given no {{ number }} is less than 10"
-    when: my_number < | int < 10
+    when: my_number < 10
     
   - name: print this if greater than equal to 10
     ansible.builtin.debug:
       msg: "given no {{ number }} is greater than 10"
-    when: my_number | int >= 10
+    when: my_number >= 10

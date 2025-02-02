@@ -3,8 +3,8 @@
   become: yes
   connection: local
   tasks:
-  - name: print names
-    ansible.builtin.packages:
+  - name: install packages
+    ansible.builtin.package:
       name: "{{ item }}"
       state: present
     loop:

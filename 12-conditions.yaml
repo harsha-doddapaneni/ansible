@@ -1,19 +1,19 @@
 - name: check a no is less than 10 or not
   hosts: local
   connection: local
-  # vars_prompt:
-  # - name: my_number
-  #   prompt: please enter number
-  #   private: false
-  vars:
-    my_number: 139
+  vars_prompt:
+  - name: my_number
+    prompt: please enter number
+    private: false
+  #vars:
+   # my_number: 139
   tasks:
   - name: print this if less than 10
     ansible.builtin.debug:
       msg: "given no {{ my_number }} is less than 10"
-    when: my_number < 10
+    when: my_number | int < 10
     
   - name: print this if greater than equal to 10
     ansible.builtin.debug:
       msg: "given no {{ my_number }} is greater than 10"
-    when: my_number >= 10
+    when: my_number | int >= 10

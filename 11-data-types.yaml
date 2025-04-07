@@ -1,5 +1,6 @@
 - name: devops course info
   hosts: local
+  connection: local
   vars:
     course: "DevOps with AWS"
     duration: 120
@@ -22,4 +23,3 @@
   - name: print the course info
     ansible.builtin.debug:
       msg: "hi, iam learning {{course}} with duraton {{duration}} topics are {{topics}} and live: {{live}}, tools are: {{tools}}"
-      

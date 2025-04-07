@@ -2,8 +2,8 @@
   hosts: web
   become: yes #take sudo access
   tasks:
-  - name: install ngin
+  - name: install nginx
     ansible.builtin.package:
-      name: nginx
+      name: ngin
       state: present
       

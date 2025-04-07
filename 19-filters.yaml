@@ -38,4 +38,4 @@
         duration: "120 HRS"
         trainer: "Sivakumar reddy"
     ansible.builtin.debug:
-      msg: "{{ couse | dict2items }}"
+      msg: "{{ course | dict2items }}"

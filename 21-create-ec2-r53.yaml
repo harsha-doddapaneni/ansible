@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-07bbfda1628a1adbf #replace with ur subnet id
+    subnet_id: "subnet-07bbfda1628a1adbf" # replace with your subnet id
     sg_id: "sg-0c41fb615bc42375e"
     ami_id: "ami-09c813fb71547fc4f"
     instances:
@@ -55,4 +55,5 @@
       wait: true
       overwrite: true
     loop: "{{ ec2_instances.results }}"
-    when: item.item == "frontend"
+    when: item.item == "frontend" #when keyword should not have {{}}
+    

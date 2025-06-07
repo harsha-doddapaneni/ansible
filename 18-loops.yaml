@@ -11,4 +11,3 @@
     - { name: 'nginx', state: 'absent' }
     - { name: 'postfix', state: 'absent' }
     - { name: 'nginx', state: 'present' }
-    

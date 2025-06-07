@@ -18,5 +18,3 @@
   - name: print info again
     ansible.builtin.debug:
       msg: "Hi, Iam learning {{COURSE}}, Duration: {{DURATION}}, Trainer: {{TRAINER}}"
-      
-  

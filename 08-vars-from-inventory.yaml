@@ -4,4 +4,3 @@
   - name: Print the information
     ansible.builtin.debug:
       msg: "Hi, Iam learning {{COURSE}}, Duration: {{DURATION}}, Trainer: {{TRAINER}}"
-      

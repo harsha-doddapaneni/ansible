@@ -56,4 +56,3 @@
       overwrite: true
     loop: "{{ ec2_instances.results }}"
     when: item.item == "frontend" #when keyword should not have {{}}
-    

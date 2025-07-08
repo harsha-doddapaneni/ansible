@@ -3,12 +3,12 @@
   become: yes #take sudo access
   tasks:
   - name: install nginx
-    ansible.builtin.package:
+    ansible.builtin.package: #To install packages
       name: nginx
       state: present
       
   - name: run nginx
-    ansible.builtin.service:
+    ansible.builtin.service: #To run the packages
       name: nginx
       state: started
       enabled: yes

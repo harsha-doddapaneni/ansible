@@ -1,4 +1,4 @@
-- name: Variables to print
+- name: Variables to Print
   hosts: web
   tasks:
   - name: Print the information

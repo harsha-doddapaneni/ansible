@@ -3,7 +3,7 @@
   connection: local
   vars:
     subnet_id: "subnet-0a5ff58531b1188c3" # replace with your subnet id subnet-0b8e69aa42cca5677
-    sg_id: "subnet-0a5ff58531b1188c3" # sg-0c41fb615bc42375e
+    sg_id: "sg-0aba49a55dfe234b4" # sg-0c41fb615bc42375e
     ami_id: "ami-09c813fb71547fc4f" # ami-09c813fb71547fc4f
     instances:
     - mysql

@@ -19,7 +19,7 @@
   tasks:
   - name: Print the information
     vars:
-      #COURSE: "DevOps with AWS from task level"
+      COURSE: "DevOps with AWS from task level"
       DURATION: "120 HRS"
       TRAINER: "Sivakumar reddy"
     ansible.builtin.debug:

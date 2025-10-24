@@ -1,6 +1,6 @@
 - name: devops course info
   hosts: local
-  connection: local
+  connection: local #for server no need to place user name & password
   vars:
     course: "DevOps with AWS"
     duration: 120

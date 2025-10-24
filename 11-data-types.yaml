@@ -11,8 +11,8 @@
     - Terraform
     - AWS
     - K8
-    live: true
-    tools:
+    live: true #boolean
+    tools: #map/dictionary
       ci: Jenkins
       cm: Ansible
       cloud: AWS
